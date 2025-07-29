@@ -1,0 +1,20 @@
+---
+import UpperHero from "./atoms/UpperHero.astro"
+import ShadowButtom from "./micro/ShadowButtom.astro"
+---
+<div class="flex flex-col gap-4 m-auto items-center justify-center h-screen w-[50%] text-center">
+    <UpperHero/>
+    <h1 class="font-extrabold text-4xl uppercase">Titulo convincente,<span class="text-blue-700">llamativo y que se sienta personal</span></h1>
+
+    <p class="font-medium text-lg w-[95%]">Breve texto descriptivo del video y un llamado a ver el video. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean tempus tincidunt nisi</p>
+
+    <!-- Cuadro para insertar video -->
+    <div class="flex flex-col justify-center items-center gap-2 w-[95%] mt-5">
+        <iframe class="w-[1035px] h-[500px] rounded-lg" src="https://www.youtube.com/embed/hQxElSj7tQQ?autoplay=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+
+    <ShadowButtom class="mt-5">Consigue una consulta YA</ShadowButtom>
+
+
+
+</div>
