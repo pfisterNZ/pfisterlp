@@ -4,125 +4,21 @@ import ShadowButtom from "./ShadowButtom.astro";
 ---
 
 
-    <div class="card-container">
-      <div class="card-content">
-        {icon && (
-          <div class="icon-wrapper">
-            <img src={icon} alt={title} class="icon" loading="lazy"   />
-          </div>
-        )}
-        <h3 class="title">{title}</h3>
-        <p class="description">{description}</p>
+<div
+  class="flex flex-col items-center justify-center w-full max-w-sm p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 z-10"
+>
+  {
+    icon && (
+      <div class="mb-4">
+        <img
+          src={icon}
+          alt={title}
+          class="w-auto h-20 object-contain"
+          loading="lazy"
+        />
       </div>
-      <div class="blob"></div>
-    </div>
-
-<style>
-  .card-container {
-    position: relative;
-    width: 100%;
-    max-width: 500px;
-    margin: auto;
-    margin-top: 10px;
-    border-radius: 1rem;
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-shadow: 10px 10px 30px #bebebe, -10px -10px 30px #ffffff;
-    z-index: 10;
+    )
   }
-  .card-container:hover {
-    box-shadow: 15px 15px 40px #bebebe, -15px -15px 40px #ffffff;
-    transform: translateY(-10px);
-    transition: all 0.15s ease-in-out;
-  }
-
-  .card-content {
-    position: relative;
-    z-index: 2;
-    width: 100%;
-    background: rgba(255, 255, 255, 0.95);
-    backdrop-filter: blur(24px);
-    border-radius: 0.875rem;
-    padding: 2rem 1.25rem;
-    text-align: center;
-    outline: 2px solid white;
-    display: flex;
-    flex-direction: column;
-    gap: 0.75rem;
-  }
-
-  .icon-wrapper {
-    display: flex;
-    justify-content: center;
-  }
-
-  .icon {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
-  }
-
-  .title {
-    font-size: 1.125rem;
-    font-weight: 700;
-    color: #000000;
-  }
-
-  .description {
-    font-size: 0.95rem;
-    color: #000000c7;
-  }
-
-  .blob {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 150px;
-    height: 150px;
-    border-radius: 80%;
-    background-color: #1c398e;
-    opacity: 1;
-    filter: blur(15px);
-    z-index: 1;
-    animation: blob-bounce 3s infinite ease;
-  }
-
-  @keyframes blob-bounce {
-    0% {
-      transform: translate(-100%, -100%) translate3d(0, 0, 0);
-    }
-    25% {
-      transform: translate(-100%, -100%) translate3d(100%, 0, 0);
-    }
-    50% {
-      transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
-    }
-    75% {
-      transform: translate(-100%, -100%) translate3d(0, 100%, 0);
-    }
-    100% {
-      transform: translate(-100%, -100%) translate3d(0, 0, 0);
-    }
-  }
-
-  @media (max-width: 480px) {
-    .card-content {
-      padding: 1.5rem 1rem;
-    }
-
-    .icon {
-      width: 32px;
-      height: 32px;
-    }
-
-    .title {
-      font-size: 1rem;
-    }
-
-    .description {
-      font-size: 0.85rem;
-    }
-  }
-</style>
+  <h3 class="text-lg font-semibold text-gray-950 mb-2">{title}</h3>
+  <p class="text-gray-800 text-sm text-center mb-4">{description}</p>
+</div>

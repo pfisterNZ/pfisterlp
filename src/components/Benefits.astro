@@ -1,41 +1,48 @@
 ---
+import Separator from "./atoms/Separator.astro";
 import BenCard from "./micro/BenCard.astro";
 ---
-<div class="py-12 px-[188px]">
-    <div class="flex flex-col items-center justify-center text-center p-8">
-      <h2 class="font-bold text-3xl text-[#070707]">Título llamativo para beneficios</h2>
-      <p class="font-medium text-lg text-black/70 mt-1">Breve caption donde cacemos al lector con ganas de leer más sobre los beneficios</p>
+
+
+
+
+<div class="pb-12 px-[188px]">
+    <div class="flex flex-col items-center justify-center text-center p-8 gap-5">
+      <h2 class="font-extrabold text-3xl text-[#070707] w-200 uppercase">Lo que cambia cuando aplicas este sistema <span class="text-black/50 font-bold lowercase ">(aunque tengas pocos seguidores)</span></h2>
+      <p class="font-medium text-lg text-black mt-1 mb-3">Estos son los resultados que la mayoría de coaches y asesores ven en sus primeros 30 días usando mi método.</p>
     </div>
-    <div class="flex flex-wrap justify-center gap-5 p-8">
+    <div class="flex flex-wrap justify-center gap-5">
       <BenCard
-        icon="https://www.svgrepo.com/show/528840/align-vertical-center.svg"
-        title="Crecimiento instantaneo"
-        description="Tecnología moderna y rápida para escalar tu marca desde cero."
+        icon="/benefitsGallery/llama.webp"
+        title="Clientes escribiéndote primero"
+        description="Sin pasar horas en Instagram rogando atención."
       />
       <BenCard
-        icon="https://www.svgrepo.com/show/528840/align-vertical-center.svg"
-        title="Despegá tu proyecto"
-        description="Tecnología moderna y rápida para escalar tu marca desde cero."
+        icon="/benefitsGallery/calendario.webp"
+        title="Agenda llena de llamadas"
+        description="Sabrás exactamente qué hacer para generar citas cada semana."
       />
       <BenCard 
-        icon="https://www.svgrepo.com/show/528840/align-vertical-center.svg"
-        title="Despegá tu proyecto"
-        description="Tecnología moderna y rápida para escalar tu marca desde cero."
-      />
-      <BenCard
-        icon="https://www.svgrepo.com/show/528840/align-vertical-center.svg"
-        title="Crecimiento instantaneo"
-        description="Tecnología moderna y rápida para escalar tu marca desde cero."
-      />
-      <BenCard
-        icon="https://www.svgrepo.com/show/528840/align-vertical-center.svg"
-        title="Despegá tu proyecto"
-        description="Tecnología moderna y rápida para escalar tu marca desde cero."
+        icon="/benefitsGallery/mensaje.webp"
+        title="Mensajes que convierten"
+        description="Conversaciones simples que terminan en ventas sin presión."
       />
       <BenCard 
-        icon="https://www.svgrepo.com/show/528840/align-vertical-center.svg"
-        title="Despegá tu proyecto"
-        description="Tecnología moderna y rápida para escalar tu marca desde cero."
+        icon="/benefitsGallery/cohete.webp"
+        title="Resultados rápidos y medibles"
+        description="Estrategia lista para aplicar desde el día 1."
+      />
+      <BenCard 
+        icon="/benefitsGallery/apreton.webp"
+        title="Conexiones reales y duraderas"
+        description="Sin tener que hacer contenido viral ni pagar anuncios."
+      />
+      <BenCard 
+        icon="/benefitsGallery/cerebro.webp"
+        title="Método fácil de implementar"
+        description="Diseñado para coaches/asesores que no quieren complicarse con la tecnología."
       />
     </div>
 </div>
+
+<Separator/>
