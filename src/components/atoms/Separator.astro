@@ -17,6 +17,12 @@ const logos = [
     {logos.map((logo, index) => (
       <img src={logo} alt="logo" class="h-8 w-auto" loading="lazy" />
     ))}
+    {logos.map((logo, index) => (
+      <img src={logo} alt="logo" class="h-8 w-auto" loading="lazy" />
+    ))}
+    {logos.map((logo, index) => (
+      <img src={logo} alt="logo" class="h-8 w-auto" loading="lazy" />
+    ))}
   </div>
 </div>
 
@@ -24,12 +30,12 @@ const logos = [
 <style>
   @keyframes marquee {
     0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
+    100% { transform: translateX(-25%); }
   }
 
   .animate-marquee {
     display: flex;
     width: max-content;
-    animation: marquee 13s linear infinite;
+    animation: marquee 20s linear infinite;
   }
 </style>

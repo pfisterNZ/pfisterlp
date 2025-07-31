@@ -1,0 +1,22 @@
+---
+const year = new Date().getFullYear();
+---
+
+<footer class="w-full bg-white text-gray-500 text-sm py-6 px-4 mt-10">
+  <div class="max-w-5xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
+    
+    <!-- Texto principal -->
+    <img src="/public/img/pa-logo-wb.svg" alt="Logo" class="w-auto h-10">
+    <p class="leading-relaxed max-w-xl">
+      © {year}, <span class="font-semibold text-gray-800">Nazareno Pfister</span>, All rights reserved.<br />
+      This site is not a part of the Facebook™ website or Facebook™ Inc. Additionally, this site is NOT endorsed by Facebook™ in any way. FACEBOOK™ is a trademark of FACEBOOK™, Inc.
+    </p>
+
+    <!-- Enlaces -->
+    <div class="flex space-x-5 font-medium">
+      <a href="" class="hover:text-white transition-colors">Terms</a>
+      <a href="" class="hover:text-white transition-colors">Disclaimer</a>
+      <a href="/politics" class="hover:text-white transition-colors">Privacy</a>
+    </div>
+  </div>
+</footer>

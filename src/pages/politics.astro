@@ -1,0 +1,94 @@
+---
+import Layout from '../layouts/Layout.astro';
+import "../styles/global.css";
+---
+
+<Layout>
+  <div class="min-h-screen bg-gray-50 py-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-4xl mx-auto">
+      <div class="bg-white shadow-lg rounded-lg p-6 sm:p-8 lg:p-12">
+        <h1 class="text-3xl sm:text-4xl font-bold text-gray-900 mb-8 text-center">
+          Política de Privacidad
+        </h1>
+        
+        <div class="prose prose-lg max-w-none">
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">1. Aceptación de Términos</h2>
+            <p class="text-gray-600 mb-4">
+              Al navegar y utilizar esta página web, usted acepta automáticamente los términos y condiciones establecidos en esta política de privacidad. 
+              Su uso continuado del sitio constituye su aceptación de cualquier modificación futura a estos términos.
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">2. Información Recopilada</h2>
+            <p class="text-gray-600 mb-4">
+              Esta página web no recopila información personal directamente. La única información que se recopila es a través de la plataforma Calendly 
+              cuando usted agenda una llamada o consulta. Calendly maneja la información de contacto (nombre, email, teléfono) que usted proporciona 
+              voluntariamente al utilizar su servicio.
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">3. Finalidad del Tratamiento de Datos</h2>
+            <p class="text-gray-600 mb-4">
+              La información recopilada a través de Calendly se emplea exclusivamente para coordinar y realizar las llamadas o consultas que usted solicita, 
+              enviar confirmaciones de agenda y responder a sus consultas específicas.
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">4. Seguridad y Protección de Datos</h2>
+            <p class="text-gray-600 mb-4">
+              Aplicamos medidas técnicas y administrativas para salvaguardar los datos personales contra accesos no autorizados, 
+              pérdidas o alteraciones indebidas. Calendly también implementa sus propias medidas de seguridad para proteger su información.
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">5. Divulgación de Información a Terceros</h2>
+            <p class="text-gray-600 mb-4">
+              No compartimos datos personales con terceros, excepto con Calendly para el funcionamiento de su plataforma de agenda. 
+              Calendly tiene su propia política de privacidad que rige el uso de la información que usted les proporciona directamente.
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">6. Derechos de los Usuarios</h2>
+            <p class="text-gray-600 mb-4">
+              Los usuarios pueden solicitar el acceso, modificación o eliminación de sus datos personales en cualquier momento, 
+              conforme a la normativa vigente. Para ejercer estos derechos, contacte directamente con Calendly o con nosotros.
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">7. Uso de Cookies</h2>
+            <p class="text-gray-600 mb-4">
+              Esta página web puede emplear cookies para optimizar el funcionamiento del sitio y mejorar la navegación. 
+              El usuario puede deshabilitarlas desde la configuración de su navegador si lo prefiere.
+            </p>
+          </section>
+
+          <section class="mb-8">
+            <h2 class="text-2xl font-semibold text-gray-800 mb-4">8. Política de Calendly</h2>
+            <p class="text-gray-600 mb-4">
+              Al utilizar el servicio de Calendly para agendar llamadas, usted también está sujeto a la política de privacidad de Calendly. 
+              Le recomendamos revisar su política en: <a href="https://calendly.com/privacy" class="text-blue-600 hover:underline">https://calendly.com/privacy</a>
+            </p>
+          </section>
+
+          <div class="text-center mt-12 pt-8 border-t border-gray-200">
+            <p class="text-sm text-gray-500">
+              Última actualización: {new Date().toLocaleDateString('es-ES', { 
+                year: 'numeric', 
+                month: 'long', 
+                day: 'numeric' 
+              })}
+            </p>
+          </div>
+        </div>
+        <p>Volver a <a href="/" class="text-blue-600 hover:underline">Inicio</a></p>
+      </div>
+    </div>
+  </div>
+</Layout> 

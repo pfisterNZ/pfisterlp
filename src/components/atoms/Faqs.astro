@@ -1,0 +1,43 @@
+---
+const faqs = [
+  {
+    question: "Tengo pocos seguidores, ¿puedo usar este método?",
+    answer:
+      "¡Sí! Justamente fue creado para coaches y asesores que no tienen grandes audiencias. La estrategia no depende del algoritmo ni de los seguidores, sino de un proceso probado para atraer clientes interesados y llevarlos a una conversación real."
+  },
+  {
+    question: "¿Necesito invertir en anuncios para que esto funcione?",
+    answer:
+      "No, no es necesario pero sería útil si tenés un presupuesto para invertir en publicidad. La landing page se basa en aprovechar al máximo tu perfil actual y mensajes estratégicos. No es 100% necesario gasto en publicidad, solo una estructura sencilla para convertir seguidores en clientes."
+  },
+  {
+    question: "¿Qué pasa después de agendar la llamada gratuita?",
+    answer:
+      "Durante la llamada revisamos tu situación actual, detectamos tus puntos fuertes y débiles y te damos una landing page personalizada para que puedas empezar a recibir mensajes de personas interesadas. Si vemos que nosotros podemos ayudarte, te mostramos cómo implementarlo paso a paso."
+  },
+  {
+    question: "¿Realizan mantenimiento web?",
+    answer:
+      "Sí, la web se está en mantenimiento constante, revisamos mapas de calor de navegación, testeamos SEO y mejoramos la experiencia de usuario, para que a la hora de salir al publico de forma definitiva, tu sitio web sea lo más efectivo posible."
+  }
+];
+---
+
+<section class="w-full max-w-2xl mx-auto px-4">
+  <h2 class="text-2xl font-bold text-center mb-6">Preguntas Frecuentes</h2>
+  <div class="space-y-3">
+    {faqs.map((faq) => (
+      <details class="group bg-white rounded-xl shadow-md border border-gray-200 transition-all duration-300 open:border-blue-500">
+        <summary class="flex justify-between items-center cursor-pointer list-none text-lg font-medium text-gray-800 px-5 py-4">
+          {faq.question}
+          <span class="transition-transform duration-300 group-open:rotate-180">
+            ⌄
+          </span>
+        </summary>
+        <div class="overflow-hidden transition-all duration-300 ease-in-out max-h-0 group-open:max-h-40 px-5 pb-4">
+          <p class="text-gray-600 leading-relaxed">{faq.answer}</p>
+        </div>
+      </details>
+    ))}
+  </div>
+</section>

@@ -1,19 +1,20 @@
 ---
 import ShadowButtom from "./micro/ShadowButtom.astro"
+import Separator from "./atoms/Separator.astro"
 ---
 
 <div
-  class="flex flex-col items-center justify-center bg-gradient-to-r from-transparent via-blue-600/30 sm:via-blue-600/50 md:via-blue-600/70 to-transparent"
+  class="flex flex-col items-center justify-center bg-gradient-to-r md:from-blue-500/95 sm:from-blue-600 from-blue-600 via-blue-600 via-50% sm:via-blue-600 md:via-blue-600 md:to-blue-500/90 sm:to-blue-600
+  to-blue-600" 
 >
-  <div class="text-center py-6 sm:py-8 md:py-15 text-gray-900 mt-4 sm:mt-6 md:mt-10 flex flex-col items-center justify-center px-3 sm:px-4 md:px-0">
-    <h2 class="font-bold text-lg sm:text-xl md:text-2xl lg:text-3xl pb-2 sm:pb-3 md:pb-5 px-1 sm:px-2 md:px-0 leading-tight">Imagina tu negocio dentro de 30 días…</h2>
-    <p class="text-xs sm:text-sm md:text-base lg:text-lg font-medium w-full max-w-2xl px-1 sm:px-2 md:px-0 leading-relaxed"> 
+  <div class="text-center py-6 sm:py-8 md:py-15 text-amber-50 mt-4 sm:mt-6 md:mt-10 flex flex-col items-center justify-center px-3 sm:px-4 md:px-0">
+    <h2 class="font-bold text-xl sm:text-2xl md:text-3xl lg:text-3xl pb-2 sm:pb-3 md:pb-5 px-1 sm:px-2 md:px-0 leading-tight">Imagina tu negocio dentro de 30 días…</h2>
+    <p class="text-sm sm:text-base md:text-lg lg:text-lg font-medium w-full max-w-2xl px-1 sm:px-2 md:px-0 leading-relaxed"> 
       Hoy podés seguir publicando sin resultados, o podés probar un sistema que ya ayudó a miles de coaches y asesores a llenar su agenda sin miles de seguidores ni anuncios caros.
     </p>
-    <p class="text-xs sm:text-sm md:text-base lg:text-lg font-medium w-full max-w-2xl mt-1 sm:mt-2 md:mt-3 px-1 sm:px-2 md:px-0 leading-relaxed">
-        Mi método está diseñado para que una vez finalizado la landing empieces a recibir mensajes de personas interesadas en tu servicio, sin sentir que estás rogando por clientes.
+    <p class="text-sm sm:text-base md:text-lg lg:text-lg font-medium w-full max-w-2xl mt-1 sm:mt-2 md:mt-3 px-1 sm:px-2 md:px-0 leading-relaxed">
+        Mi método está diseñado para que una vez finalizada la landing empieces a recibir mensajes de personas interesadas en tu servicio, sin sentir que estás rogando por clientes.
     </p>
     <img src="/icons/down-arrow-w.svg" alt="flecha" class="w-6 h-6 sm:w-8 sm:h-8 md:w-10 md:h-10 mt-2 sm:mt-3 md:mt-5 animate-bounce" />
-</div>
     <ShadowButtom>« Más detalles »</ShadowButtom>
 </div>
