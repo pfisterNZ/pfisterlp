@@ -10,25 +10,21 @@ import ShadowButtom from "./micro/ShadowButtom.astro";
 </div>
 
 <div
-  class="flex flex-col gap-4 m-auto items-center justify-center h-screen w-[60%] text-center"
+  class="flex flex-col gap-2 sm:gap-3 md:gap-4 m-auto items-center justify-start sm:justify-center w-full px-3 sm:px-4 md:px-8 lg:w-[80%] xl:w-[60%] text-center pt-8 sm:pt-0 sm:py-6 md:py-8 lg:py-0 mt-5"
 >
   <UpperHero />
-  <h1 class="font-extrabold text-4xl uppercase">
-    Como conseguir tus próximos <span class="bg-blue-600 py-[-10px] text-white">3 clientes en menos de 30 días</span>, aunque tengas<span class="text-blue-600"> menos de 1000 seguidores </span>
+  <h1 class="font-extrabold text-lg sm:text-xl md:text-2xl lg:text-3xl xl:text-4xl uppercase leading-tight px-1 sm:px-2 md:px-0">
+    Como conseguir tus próximos <span class="bg-blue-600 py-1 px-1 sm:py-[-10px] text-white">3 clientes en menos de 30 días</span>, aunque tengas<span class="text-blue-600"> menos de 1000 seguidores </span>
   </h1>
 
-  <p class="font-medium text-lg w-[95%]">
+  <p class="font-medium text-xs sm:text-sm md:text-base lg:text-lg w-full max-w-4xl px-1 sm:px-2 md:px-0 leading-relaxed">
     Te muestro la forma sencilla que usan miles de asesores para llenar su agenda sin depender del algoritmo de Instagram, hoy son ellos los que eligen a quien quieren ayudar y no al que pueden.
   </p>
 
   <!-- Cuadro para insertar video -->
-  <div class="flex flex-col justify-center items-center gap-2 w-[95%] mt-5 bg-gray-100">
-    <iframe
-      class="w-[1035px] h-[500px] rounded-lg bg-gra"
-      src=""
-      title="YouTube video player"
-      frameborder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowfullscreen></iframe>
+  <div class="flex flex-col justify-center items-center gap-2 w-full max-w-4xl mt-2 sm:mt-3 md:mt-5 bg-gray-100 rounded-lg p-1 sm:p-2 md:p-0 mb-20">
+    <div class="w-full h-40 sm:h-48 md:h-64 lg:h-80 xl:h-[500px] rounded-lg bg-gray-200 flex items-center justify-center">
+      <p class="text-gray-500 text-sm">Video placeholder</p>
+    </div>
   </div>
 </div>
