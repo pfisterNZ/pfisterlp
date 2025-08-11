@@ -13,18 +13,27 @@ import ShadowButtom from "./micro/ShadowButtom.astro";
   class="flex flex-col gap-2 sm:gap-3 md:gap-4 m-auto items-center justify-start sm:justify-center w-full px-3 sm:px-4 md:px-8 lg:w-[80%] xl:w-[60%] text-center pt-8 sm:pt-0 sm:py-6 md:py-8 lg:py-0"
 >
   <UpperHero />
-  <h1 class="font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-5xl uppercase leading-tight px-1 sm:px-2 md:px-0">
-    Como conseguir tus próximos <span class="bg-blue-600 py-1 px-1 sm:py-[-10px] text-white">3 clientes en menos de 30 días</span>, aunque tengas<span class="text-blue-600"> menos de 1000 seguidores </span>
+  <h1 class="font-extrabold text-2xl sm:text-3xl md:text-4xl lg:text-4xl xl:text-4xl uppercase leading-tight px-1 sm:px-2 md:px-0">
+    Como conseguir tus próximos <span class="bg-blue-600 py-1 px-1 sm:py-[-10px] text-white">5 clientes high ticket en menos de 30 días</span>, incluso con<span class="text-blue-600"> menos de 1000 seguidores </span>
   </h1>
 
-  <p class="font-medium text-sm sm:text-base md:text-lg lg:text-lg w-full max-w-4xl px-1 sm:px-2 md:px-0 leading-relaxed">
-    Te muestro la forma sencilla que usan miles de asesores para llenar su agenda sin depender del algoritmo de Instagram, hoy son ellos los que eligen a quien quieren ayudar y no al que pueden.
-  </p>
-
+  
   <!-- Cuadro para insertar video -->
-  <div class="flex flex-col justify-center items-center gap-2 w-full max-w-4xl mt-2 sm:mt-3 md:mt-5 bg-gray-100 rounded-lg p-1 sm:p-2 md:p-0">
-    <div class="w-full h-40 sm:h-48 md:h-64 lg:h-80 xl:h-[500px] rounded-lg bg-gray-200 flex items-center justify-center">
-      <p class="text-gray-500 text-sm">Video placeholder</p>
-    </div>
+  <div class="flex flex-col justify-center items-center gap-2 w-full max-w-4xl mt-2 sm:mt-3 md:mt-0 rounded-lg p-0">
+    <script src="https://fast.wistia.com/player.js" async></script>
+    <script src="https://fast.wistia.com/embed/y4vjreewn7.js" async type="module"></script>
+    <style>
+      wistia-player[media-id='y4vjreewn7']:not(:defined) {
+        background: center / contain no-repeat url('https://fast.wistia.com/embed/medias/y4vjreewn7/swatch');
+        display: block;
+        filter: blur(5px);
+        padding-top:56.25%;
+      }
+    </style>
+    <wistia-player media-id="y4vjreewn7" aspect="1.7777777777777777"></wistia-player>
   </div>
+  <p class="font-medium text-sm sm:text-base md:text-lg lg:text-lg w-full max-w-4xl px-1 sm:px-2 md:px-0 leading-relaxed">
+    Te muestro este <strong> sistema simple pero poderoso</strong> que utilizan miles de vendedores online para <strong> llenar sus agendas,</strong> nada que no se haya probado antes, sin magia y sin mentiras. Un embudo de ventas de trafico frio <strong> EFICAZ que lo tiene el más novato hasta el más experimentado.</strong>
+  </p>
+  <hr class="w-full max-w-4xl my-4 mb-5">
 </div>
