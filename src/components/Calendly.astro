@@ -23,47 +23,7 @@
 </div>
 
 <script>
-  // Declaraciones de tipos para evitar errores de linter
-  declare global {
-    interface Window {
-      fbq: any;
-      Calendly: any;
-    }
-  }
-
-  // Función para detectar cuando alguien se registra en Calendly
-  function initCalendlyTracking() {
-    // Esperar a que Calendly se cargue
-    // @ts-ignore - Calendly es una API externa
-    if (typeof Calendly !== 'undefined') {
-      // Escuchar el evento de reserva exitosa
-      // @ts-ignore - Calendly es una API externa
-      Calendly.initInlineWidget({
-        url: 'https://calendly.com/pfistercontacto/30min',
-        parentElement: document.querySelector('.calendly-inline-widget'),
-        onEventScheduled: function(e: any) {
-          // Disparar evento de conversión de Meta
-          // @ts-ignore - fbq es la API de Meta Pixel
-          if (typeof fbq !== 'undefined') {
-            // @ts-ignore - fbq es la API de Meta Pixel
-            fbq('track', 'Contact');
-            console.log('Evento de conversión disparado: Contact');
-          }
-        }
-      });
-    } else {
-      // Si Calendly no está cargado, intentar de nuevo en 1 segundo
-      setTimeout(initCalendlyTracking, 1000);
-    }
-  }
-
-  // Inicializar el tracking cuando el DOM esté listo
-  document.addEventListener('DOMContentLoaded', function() {
-    // Esperar un poco más para asegurar que Calendly se haya cargado
-    setTimeout(initCalendlyTracking, 2000);
-  });
-
-  // También escuchar el evento de Calendly cuando se carga
+  // Escuchar el evento de Calendly cuando se carga
   window.addEventListener('message', function(e: MessageEvent) {
     if (e.data.event && e.data.event.indexOf('calendly') === 0) {
       if (e.data.event === 'calendly.event_scheduled') {
