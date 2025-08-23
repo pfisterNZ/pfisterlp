@@ -1,11 +1,14 @@
 ---
-const { icon, title, description } = Astro.props;
+const { icon, title, description, href } = Astro.props;
 import ShadowButtom from "./ShadowButtom.astro";
 ---
 
 
-<div
+<a
   class="flex flex-col items-center justify-center w-full max-w-sm p-3 sm:p-4 md:p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-all duration-200 hover:scale-105 z-10"
+  href={href}
+  target="_blank"
+  rel="noopener noreferrer"
 >
   {
     icon && (
@@ -13,7 +16,7 @@ import ShadowButtom from "./ShadowButtom.astro";
         <img
           src={icon}
           alt={title}
-          class="w-auto h-12 sm:h-16 md:h-20 object-contain"
+          class="w-auto h-auto sm:h-auto md:h-auto object-contain"
           loading="lazy"
         />
       </div>
@@ -21,4 +24,4 @@ import ShadowButtom from "./ShadowButtom.astro";
   }
   <h3 class="text-base sm:text-lg md:text-lg font-semibold text-gray-950 mb-1 sm:mb-2 text-center leading-tight">{title}</h3>
   <p class="text-gray-800 text-sm sm:text-base text-center mb-2 sm:mb-3 md:mb-4 leading-relaxed">{description}</p>
-</div>
+</a>
